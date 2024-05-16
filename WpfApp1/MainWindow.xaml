@@ -1,0 +1,115 @@
+<ui:FluentWindow
+	x:Class="WpfApp1.MainWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:Wpf="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf"
+	ui:Name="fluentWindow"
+	Topmost="True"
+	Title="XcHvYYrNa"
+	Height="400"
+	Width="750"
+	ui:ExtendsContentIntoTitleBar="True"
+	ResizeMode="CanResize"
+	WindowStartupLocation="CenterScreen"
+	Background="#FF09000E" xmlns:wpfapp1="clr-namespace:WpfApp1"
+	x:Name="fluentWindow">
+	<Grid
+		Background="#FF09000E"
+		Loaded="fluentWindow_Loaded">
+		<Grid
+			Name="Tabs">
+			<Wpf:WebView2
+				Name="CodeEditor"
+				Margin="10,50,10,50"
+				Panel.ZIndex="-2" />
+		</Grid>
+		<Ellipse
+			Name="Status"
+			Margin="155,20,0,0"
+			Width="12"
+			Height="12"
+			Fill="#FF7F7F"
+			HorizontalAlignment="Left"
+			VerticalAlignment="Top" />
+		<Image
+			Margin="4,7,0,0"
+			Source="New Project (37).png"
+			Width="145"
+			Height="32"
+			HorizontalAlignment="Left"
+			VerticalAlignment="Top"
+			Stretch="Fill" />
+		<ui:TitleBar
+			Name="RootTitleBar"
+			Padding="8"
+			Grid.Row="0"
+			ForceShutdown="False"
+			Background="#00FFFFFF"
+			Icon=""
+			Foreground="#00FFFFFF"
+			Height="45" />
+		<ui:Button
+			Margin="10,0,0,10"
+			VerticalAlignment="Bottom"
+			Width="40"
+			Height="35"
+			Click="ExecuteClicked">
+			<ui:Image
+				HorizontalAlignment="Center"
+				VerticalAlignment="Center"
+				Width="18"
+				Height="18"
+				Source="/icons8-play-40 (1).png" />
+		</ui:Button>
+		<ui:Button
+			Margin="55,0,0,10"
+			VerticalAlignment="Bottom"
+			Width="40"
+			Height="35"
+			Click="ClearButton_Click">
+			<ui:Image
+				HorizontalAlignment="Center"
+				VerticalAlignment="Center"
+				Width="18"
+				Height="18"
+				Source="/icons8-erase-40.png" />
+		</ui:Button>
+		<ui:Button
+			HorizontalAlignment="Right"
+			Margin="0,0,10,10"
+			VerticalAlignment="Bottom"
+			Width="40"
+			Height="35"
+			Click="InjectButton_MouseClick1">
+			<ui:Image
+				HorizontalAlignment="Center"
+				VerticalAlignment="Center"
+				Width="18"
+				Height="18"
+				Source="/icons8-attach-40.png" />
+		</ui:Button>
+		<ui:Button
+			Margin="100,0,0,10"
+			VerticalAlignment="Bottom"
+			Width="40"
+			Height="35"
+			Click="OpenFile">
+			<ui:Image
+				HorizontalAlignment="Center"
+				VerticalAlignment="Center"
+				Width="18"
+				Height="18"
+				Source="/icons8-open-file-40 (1).png" />
+		</ui:Button>
+		<ui:Button
+			Margin="145,0,0,10"
+			VerticalAlignment="Bottom"
+			Width="40"
+			Height="35"
+			Click="SaveFile">
+			<ui:Image
+				HorizontalAlignment="Center"
+				VerticalAlignment="Center"
+				Width="18"
+				Height="18"
+				Source="/icons8-save-40.png" />
+		</ui:Button>
+	</Grid>
+</ui:FluentWindow>

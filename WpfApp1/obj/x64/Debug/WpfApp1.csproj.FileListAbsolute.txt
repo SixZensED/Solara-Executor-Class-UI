@@ -1,0 +1,3 @@
+C:\Users\SixZens\Downloads\dnSpy-net-win64\Yes\WpfApp1\obj\x64\Debug\WpfApp1.csproj.AssemblyReference.cache
+C:\Users\SixZens\Downloads\dnSpy-net-win64\Yes\WpfApp1\obj\x64\Debug\App.baml
+C:\Users\SixZens\Downloads\dnSpy-net-win64\Yes\WpfApp1\obj\x64\Debug\WpfApp1_MarkupCompile.cache
